@@ -12,7 +12,7 @@ window.onload = function loadDoc() {
 
             schools = j.Schools;
 
-            alert (schools);
+            console.log(schools);
         }
     };
     xhttp.open("GET", "schools.json", true);
