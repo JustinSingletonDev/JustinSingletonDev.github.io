@@ -1,24 +1,26 @@
 {
-    "my_schools": [
-        {
-            "School": "Community College of the Air Force",
-            "Major": "Intelligence Studies and Technology",
-            "Type": "AS",
-            "Conferment Date": 15102020
-        },
-        {
-            "School": "Defense Language Institute",
-            "Major": "Russian Studies",
-            "Type": "AA",
-            "Conferment Date": 15062016
-        },
-        {
-            "School": "Bellevue University",
-            "Major": "Web Development",
-            "Type": "BS",
-            "Conferment Date": 15082020
-        }
-        
-    ]
-    
+    "CCAF": {
+        "School": "Community College of the Air Force",
+        "Major": "Intelligence Studies and Technology",
+        "Type": "AS",
+        "Conferment Date": 15102020
+    },
+    "DLI": {
+        "School": "Defense Language Institute",
+        "Major": "Russian Studies",
+        "Type": "AA",
+        "Conferment Date": 15062016
+    },
+    "Bellevue": {
+        "School": "Bellevue University",
+        "Major": "Web Development",
+        "Type": "BS",
+        "Conferment Date": 15082020
+    },
+    "Boston": {
+        "School": "Boston University",
+        "Major": "Software Development",
+        "Type": "MS",
+        "Conferment Date": "Currently enrolled"
+    }
 }

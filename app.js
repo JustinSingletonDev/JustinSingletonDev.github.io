@@ -10,7 +10,7 @@ window.onload = function loadDoc() {
             j = JSON.parse(json);
             console.log(j);
 
-            schools = j.my_schools[0].School;
+            schools = j.CCAF.School;
 
             console.log(schools);
         }
