@@ -1,3 +1,4 @@
-$.getJson("https://JustinSingletonDev.github.io/schools.json", window.onload = function(data) {
-    alert(data);
-});
+var xhttp = new XMLHttpRequest();
+
+xhttp.open("GET", "https://justinsingletondev.github.io/schools.json", true);
+xhttp.send();
