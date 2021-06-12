@@ -6,6 +6,8 @@ window.onload = function loadDoc() {
 
     schools = j.Schools;
 
+    alert (schools);
+
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             for (i = 0; i < schools.length; i++) {
