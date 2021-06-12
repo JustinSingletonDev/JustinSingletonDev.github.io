@@ -1,3 +1,3 @@
-$.getJson("https://JustinSingletonDev.github.io", window.onload = function(data) {
+$.getJson("https://JustinSingletonDev.github.io/schools.json", window.onload = function(data) {
     alert(data);
 });
