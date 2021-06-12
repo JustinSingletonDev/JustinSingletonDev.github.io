@@ -2,9 +2,9 @@ window.onload = function loadDoc() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            alert(my_schools);
+            document.getElementById("demo").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "app.js", true);
+    xhttp.open("GET", "schools.json", true);
     xhttp.send();
 }
