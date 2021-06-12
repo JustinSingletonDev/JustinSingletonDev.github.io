@@ -4,8 +4,11 @@ window.onload = function loadDoc() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             json = this.responseText;
+            console.log(json);
+
             txt = "";
             j = JSON.parse(json);
+            console.log(j);
 
             schools = j.Schools;
 
