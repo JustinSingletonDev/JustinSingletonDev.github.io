@@ -1,4 +1,6 @@
-var xhttp = new XMLHttpRequest();
-
-xhttp.open("GET", "https://justinsingletondev.github.io/schools.json", true);
-xhttp.send();
+window.onload = function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    
+    xhttp.open("POST", "app.js", true);
+    xhttp.send();
+}
