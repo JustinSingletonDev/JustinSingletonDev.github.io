@@ -6,13 +6,19 @@ window.onload = function loadDoc() {
             json = this.responseText;
             console.log(json);
 
+            titles = "";
             txt = "";
             j = JSON.parse(json);
             console.log(j);
 
-            schools = j.CCAF.School;
+            schools = j.CCAF;
 
             console.log(schools);
+            
+            for (i = 0; i < j.length; i++) {
+                titles = "<th>" + j[i].nodeValue + "</th>";
+            }
+            document.getElementById("titles").innerHTML = titles;
         }
     };
     xhttp.open("GET", "schools.json", true);
@@ -20,11 +26,11 @@ window.onload = function loadDoc() {
 }
 
 
-//xhttp.onreadystatechange = function() {
-//    if (this.readyState == 4 && this.status == 200) {
-//        for (i = 0; i < schools.length; i++) {
-//            txt = txt + schools[i].childNodes[0].nodeValue + "<br>";
+//    xhttp.onreadystatechange = function() {
+//        if (this.readyState == 4 && this.status == 200) {
+//            for (i = 0; i < schools.length; i++) {
+//                txt = txt + schools[i].childNodes[0].nodeValue + "<br>";
+//            }
+//            document.getElementById("demo").innerHTML = txt;
 //        }
-//        document.getElementById("demo").innerHTML = txt;
-//    }
-//};
+//    };
