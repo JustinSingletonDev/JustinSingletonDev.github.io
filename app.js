@@ -9,8 +9,8 @@ window.onload = function loadDoc() {
             txt = "";
             j = JSON.parse(json);
             
-            for (i = 0; i < j.length; i++) {
-                titles = "<th>" + j[i].childNodes[0].nodeValue + "</th>";
+            for (const property in j) {
+                titles = '<th>${property}</th>';
                 console.log(titles);
             }
             document.getElementById("titles").innerHTML = titles;
