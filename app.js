@@ -17,6 +17,7 @@ window.onload = function loadDoc() {
             
             for (i = 0; i < j.length; i++) {
                 titles = "<th>" + j[i].nodeValue + "</th>";
+                console.log(titles);
             }
             document.getElementById("titles").innerHTML = titles;
         }
