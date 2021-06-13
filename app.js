@@ -18,21 +18,6 @@ window.onload = function loadDoc() {
                     "beforeend", `<td>${j.CCAF[property]}</td>`);
                 console.log(`${j.CCAF[property]}`);
             }
-            for (const property in j.DLI) {
-                document.getElementById("CCAF").insertAdjacentHTML(
-                    "beforeend", `<td>${j.DLI[property]}</td>`);
-                console.log(`${j.DLI[property]}`);
-            }
-            for (const property in j.Bellevue) {
-                document.getElementById("CCAF").insertAdjacentHTML(
-                    "beforeend", `<td>${j.Bellevue[property]}</td>`);
-                console.log(`${j.Bellevue[property]}`);
-            }
-            for (const property in j.Boston) {
-                document.getElementById("CCAF").insertAdjacentHTML(
-                    "beforeend", `<td>${j.Boston[property]}</td>`);
-                console.log(`${j.Boston[property]}`);
-            }
         }
     };
     xhttp.open("GET", "schools.json", true);
