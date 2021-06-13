@@ -11,9 +11,9 @@ window.onload = function loadDoc() {
             var table = document.getElementById("table");
             
             for (const property in j) {
-                document.getElementById("titles").innerHTML = `<th>${property}</th>`;
+                document.getElementById("titles").insertAdjacentHTML(
+                    "beforeend", `<th>${property}</th>`);
                 console.log(`<th>${property}</th>`);
-                console.log("UPDATE");
             }
         }
     };
