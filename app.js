@@ -4,19 +4,13 @@ window.onload = function loadDoc() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             json = this.responseText;
-            console.log(json);
 
             titles = "";
             txt = "";
             j = JSON.parse(json);
-            console.log(j);
-
-            schools = j.CCAF;
-
-            console.log(schools);
             
             for (i = 0; i < j.length; i++) {
-                titles = "<th>" + j[i].nodeValue + "</th>";
+                titles = "<th>" + j[i].childNodes[0].nodeValue + "</th>";
                 console.log(titles);
             }
             document.getElementById("titles").innerHTML = titles;
