@@ -10,7 +10,7 @@ window.onload = function loadDoc() {
             j = JSON.parse(json);
             
             for (const property in j) {
-                titles = '<th>${property}</th>';
+                titles = `<th>${property}</th>`;
                 console.log(titles);
             }
             document.getElementById("titles").innerHTML = titles;
