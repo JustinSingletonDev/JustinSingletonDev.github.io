@@ -15,8 +15,23 @@ window.onload = function loadDoc() {
             }
             for (const property in j.CCAF) {
                 document.getElementById("CCAF").insertAdjacentHTML(
-                    "beforeend", `<td>${property}</td>`);
-                console.log(`${property}`);
+                    "beforeend", `<td>${obj[property]}</td>`);
+                console.log(`${obj[property]}`);
+            }
+            for (const property in j.DLI) {
+                document.getElementById("CCAF").insertAdjacentHTML(
+                    "beforeend", `<td>${obj[property]}</td>`);
+                console.log(`${obj[property]}`);
+            }
+            for (const property in j.Bellevue) {
+                document.getElementById("CCAF").insertAdjacentHTML(
+                    "beforeend", `<td>${obj[property]}</td>`);
+                console.log(`${obj[property]}`);
+            }
+            for (const property in j.Boston) {
+                document.getElementById("CCAF").insertAdjacentHTML(
+                    "beforeend", `<td>${obj[property]}</td>`);
+                console.log(`${obj[property]}`);
             }
         }
     };
