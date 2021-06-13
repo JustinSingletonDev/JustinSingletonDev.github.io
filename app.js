@@ -5,15 +5,16 @@ window.onload = function loadDoc() {
         if (this.readyState == 4 && this.status == 200) {
             json = this.responseText;
 
-            titles = "";
             txt = "";
             j = JSON.parse(json);
+
+            var table = document.getElementById("table");
             
             for (const property in j) {
-                titles = `<th>${property}</th>`;
-                console.log(titles);
+                document.getElementById("titles").innerHTML = `<th>${property}</th>`;
+                console.log(`<th>${property}</th>`);
+                console.log("UPDATE");
             }
-            document.getElementById("titles").innerHTML = titles;
         }
     };
     xhttp.open("GET", "schools.json", true);
