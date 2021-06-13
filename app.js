@@ -7,13 +7,16 @@ window.onload = function loadDoc() {
 
             txt = "";
             j = JSON.parse(json);
-
-            var table = document.getElementById("table");
             
             for (const property in j) {
                 document.getElementById("titles").insertAdjacentHTML(
                     "beforeend", `<th>${property}</th>`);
                 console.log(`<th>${property}</th>`);
+            }
+            for (const property in j.CCAF) {
+                document.getElementById("CCAF").insertAdjacentHTML(
+                    "beforeend", `<td>${property}</td>`);
+                console.log(`${property}`);
             }
         }
     };
